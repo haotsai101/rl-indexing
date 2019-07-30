@@ -1,0 +1,30 @@
+<!--<mat-grid-list cols="{{footer.length}}">
+  
+  <mat-grid-tile class="links" *ngFor="let section of footer">
+    
+    <h1>{{section.title}}</h1>
+
+    <mat-list>
+      <mat-list-item *ngFor="let link of section.links">
+        <a href="{{link.href}}" class="fhtl-link">{{link.name}}</a>  
+      </mat-list-item>
+    </mat-list>
+  
+  </mat-grid-tile>
+  
+</mat-grid-list>
+-->
+
+<div class="section-holder">
+
+  <div class="column" *ngFor="let section of footer">
+    <h1 class="section-title">{{section.title}}</h1>
+
+    <mat-list dense>
+      <mat-list-item class="link-item" *ngFor="let link of section.links">
+        <a href="{{link.href}}" target="_blank" class="fhtl-link">{{link.name}}</a>  
+      </mat-list-item>
+    </mat-list>
+  </div>
+
+</div>

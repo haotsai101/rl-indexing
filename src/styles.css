@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Choose just one of the imported styles and comment the rest out */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
+/* @import "~@angular/material/prebuilt-themes/pink-bluegrey.css"; */
+/* @import "~@angular/material/prebuilt-themes/purple-green.css"; */
+
+body, html {
+  margin: 0;
+}
+
+.mat-card {
+  margin: 16px;
+}
+
+.thin-hr {
+  max-width: 80%;
+  background-color: #ccc;
+  height: 1px;
+  border: 0px;
+}
+
+.show-compact {
+  display: none !important;
+}
+
+@media screen and (max-width: 900px) {
+    .show-compact {
+        display: block !important;
+    }
+}

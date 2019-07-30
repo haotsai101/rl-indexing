@@ -1,0 +1,16 @@
+<mat-card align="center" class="welcome-card">
+  <div>
+    <h2 class="welcome-title">Welcome to {{links.APP_NAME}}!</h2>
+    <p class="app-description">{{appDescription}}</p>
+  </div>
+  <div align="center" class="button-border">
+    <button class="login-button" color="primary" mat-raised-button (click)="doLogin()">Login With FamilySearch</button>
+  </div>
+
+  <hr class="thin-hr">
+
+  <div class="partner-section">
+      <img *ngFor="let img of partnerLogos" class="partner-logo" src="{{img}}">    
+  </div>
+</mat-card>
+  

@@ -1,0 +1,6 @@
+{
+    "environment": "integration",
+    "appKey": "a02f100000STVSKAA5",
+    "redirectUri": "http%3A%2F%2Flocalhost%3A9000%2Fpage.html",
+    "saveAccessToken": true
+}
