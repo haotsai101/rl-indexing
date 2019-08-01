@@ -10,15 +10,16 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatListModule } from '@angular/material/list';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   imports: [MatButtonModule, MatToolbarModule, MatInputModule, 
   			MatProgressSpinnerModule, MatCardModule, MatIconModule, 
 			MatSidenavModule, MatMenuModule, MatDialogModule, MatGridListModule,
-			MatListModule],
+			MatListModule, MatSnackBarModule],
   exports: [MatButtonModule, MatToolbarModule, MatInputModule, 
   			MatProgressSpinnerModule, MatCardModule, MatIconModule, 
 			MatSidenavModule, MatMenuModule, MatDialogModule, MatGridListModule,
-			MatListModule],
+			MatListModule, MatSnackBarModule],
 })
 export class MaterialModule { }

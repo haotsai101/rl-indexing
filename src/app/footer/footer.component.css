@@ -20,9 +20,8 @@
 .section-holder {
     display: flex;
     justify-content: center;
-    background-color: #3f51b5; /* Update this to match the current theme color */
+    background-color: #3f51b5; /* Update as needed to match the chosen color scheme */
     padding: 30px;
-    margin-top: calc(100vh);
 }
 
 .column {

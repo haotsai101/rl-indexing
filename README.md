@@ -30,6 +30,14 @@ The template is configured as a PWA (progressive web app) by default. Options fo
 
 Once served over https, assuming all other PWA requirements are still met, the app can be downloaded to an end user's phone just like any other app.
 
+## Social Media
+
+There are several meta tags in index.html that are needed for social media sharing. These should be updated with the appropriate information. Additional tags could also be added as needed for individual pages (e.g. the image, description, and title could be customized for each page)
+
+## Google Analytics
+
+To enable google analytics, go to [http://www.google.com/analytics/](http://www.google.com/analytics/) and create a tracking id for the new website. Then replace it in `index.html` where it says `<YOUR_TRACKING_ID>`. Uncomment this code snippet and the code snippet in `app.component.ts`. The console will show various analytics for page visits.
+
 ## Updating Angular
 
 Currently, angular releases a new major version every 6 months. It is a good practice to keep up to date with these updates. Usually, upgrading will be a fairly straightforward process where you can simply run a few commands and have dependencies be updated automatically. In most cases there will be few to no breaking changes, and you can simply run `ng update @angular/cli @angular/core @angular/material` to get everything updated properly. More instructions can be found at: [https://update.angular.io/](https://update.angular.io/).

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LinksService } from '../services/links/links.service';
 
+import { LinksService } from '../services/links/links.service';
 
 declare type section = {
   title: string,
@@ -9,6 +9,10 @@ declare type section = {
     name: string
   }[]
 }
+
+/**
+ * Footer page for displaying links to the other fhtl websites.
+ */
 
 @Component({
   selector: 'app-footer',
