@@ -36,7 +36,7 @@ There are several meta tags in index.html that are needed for social media shari
 
 ## Google Analytics
 
-To enable google analytics, go to [http://www.google.com/analytics/](http://www.google.com/analytics/) and create a tracking id for the new website. Then replace it in `index.html` where it says `<YOUR_TRACKING_ID>`. Uncomment this code snippet and the code snippet in `app.component.ts`. The console will show various analytics for page visits.
+To enable google analytics, go to [http://www.google.com/analytics/](http://www.google.com/analytics/) and create a tracking id for the new website. Then replace it in `index.html` where it says `UA-xxxxx-xxx`. Uncomment this code snippet and the code snippet in `app.component.ts`. The console will show various analytics for page visits.
 
 ## Updating Angular
 
