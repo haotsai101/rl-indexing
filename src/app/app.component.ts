@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { LinksService } from './services/links/links.service';
-import { FsService } from './services/fs/fs.service';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +10,7 @@ import { FsService } from './services/fs/fs.service';
 export class AppComponent implements OnInit {
   public title: string;
 
-  constructor(private fsService: FsService, private router: Router, public links: LinksService, private route: ActivatedRoute) {
+  constructor(private router: Router, public links: LinksService, private route: ActivatedRoute) {
     this.title = links.APP_NAME.replace(' ', ''); //Set the title for the page
 
     // Uncomment to enable google analytics
@@ -26,17 +25,6 @@ export class AppComponent implements OnInit {
   //Add more routes here as needed for the main menu
 
   ngOnInit() {
-    let loggedIn = this.fsService.checkLoginStatus();
-
-    if (loggedIn) {
-      this.goHome();
-    } else if (!window.location.href.includes('fstoken')) {
-      if (window.location.href.includes('home')) {
-        this.router.navigateByUrl('expired');
-      } else {
-        //this.router.navigateByUrl('start');
-      }
-    }
   }
 
   goHome() {

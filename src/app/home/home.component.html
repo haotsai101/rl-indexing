@@ -1,10 +1,19 @@
 <mat-card align="center" class="welcome-card">
-    <div>
-      <h2 class="welcome-title">Home</h2>
-    </div>
+  <div>
+    <h2 class="welcome-title">Welcome to BYU RL INDEXING!</h2>
+  </div>
 
-    <div>
-      <div *ngFor="let item of sampleData">{{item.display.name}}</div>
-    </div>
+  <div ng-form class="example-form">
+    <mat-form-field class="example-full-width">  
+      <input #userInput 
+      (keyup.enter)="getImages(userInput.value); userInput.value='' "
+      matInput placeholder="Surname" value="name">
+
+    </mat-form-field>
+    <button mat-raised-button (click)="getImages(userInput.value); userInput.value=''">submit</button>
+
+  </div>
+  
+
       
 </mat-card>

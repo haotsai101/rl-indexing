@@ -27,9 +27,9 @@ export class LinksService {
 
   public readonly FS: string = 'https://www.familysearch.org/'
 
-  public readonly APP_NAME: string = 'AngularTemplate';
+  public readonly APP_NAME: string = 'BYU RL INDEXING';
 
-  private home: string = 'start';
+  private home: string = 'home';
 
   public mainMenu = [
     { name: 'Home', href: 'home', icon: 'home' },
@@ -42,28 +42,6 @@ export class LinksService {
 
   getHome(): string {
     return this.home;
-  }
-
-  setHomeLoggedIn(): void {
-    this.home = 'home';
-    this.mainMenu.push({
-      name: 'Logout',
-      href: 'logout',
-      icon: 'supervised_user'
-    });
-  }
-
-  logOut() {
-    this.mainMenu.pop();
-    this.home = 'start';
-  }
-
-  /**
-   * 
-   * @param redirect the url to return to upon signing in. Defaults to the current url 
-   */
-  public getAuthRedirect(redirect = window.location.href): string {
-    return `${this.FHTL.auth}?redirect=${redirect}`;
   }
 
 }

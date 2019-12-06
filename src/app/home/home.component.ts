@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FsService } from '../services/fs/fs.service';
-
+import { IndexingService } from "../services/indexing/indexing.service";
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -8,20 +7,21 @@ import { FsService } from '../services/fs/fs.service';
 })
 export class HomeComponent implements OnInit {
 
-  public sampleData: any[];
+  public paths: any[];
+  public name: string;
+  public file: any;
 
-  constructor(private fsService: FsService) { 
-    this.getSampleFsData();
+  constructor(private indexingService: IndexingService) { 
+    this.file = indexingService.getImages();
+    console.log(this.file);
   }
 
-  getSampleFsData() {
-    this.fsService.FhtlX.getPersonAncestry(this.fsService.fsSession.fs_user.pid, (error: any, data: any[]) => {
-      console.log("Ancestry:", data);
-      this.sampleData = data;
-    }, 4);
-  }
 
   ngOnInit() {
   }
 
+  getImages(input: string) {
+    console.log("Name: " + input);
+  }
+  
 }

@@ -13,9 +13,6 @@ import { FooterComponent } from './footer/footer.component';
 import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
 import { LoaderComponent } from './loader/loader.component';
-import { LogoutComponent } from './logout/logout.component';
-import { SessionExpiredComponent } from './session-expired/session-expired.component';
-import { StartComponent } from './start/start.component';
 
 @NgModule({
   declarations: [
@@ -24,9 +21,6 @@ import { StartComponent } from './start/start.component';
     HelpComponent,
     HomeComponent,
     LoaderComponent,
-    LogoutComponent,
-    SessionExpiredComponent,
-    StartComponent
   ],
   imports: [
     BrowserModule,
