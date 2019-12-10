@@ -14,6 +14,22 @@
 
   </div>
   
+  <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile>
+        <mat-checkbox class="example-margin" (change)="change1()">pic 1</mat-checkbox>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-checkbox class="example-margin" (change)="change2()">pic 2</mat-checkbox>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-checkbox class="example-margin" (change)="change3()">pic 3</mat-checkbox>
+    </mat-grid-tile>
+    <mat-grid-tile>
+          <mat-checkbox class="example-margin" (change)="change4()">pic 4</mat-checkbox>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <button mat-raised-button (click)="sendOutput()">submit</button>
 
       
 </mat-card>

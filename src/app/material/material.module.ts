@@ -11,6 +11,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatListModule } from '@angular/material/list';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 @NgModule({
   imports: [MatButtonModule, MatToolbarModule, MatInputModule, 
@@ -20,6 +21,6 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
   exports: [MatButtonModule, MatToolbarModule, MatInputModule, 
   			MatProgressSpinnerModule, MatCardModule, MatIconModule, 
 			MatSidenavModule, MatMenuModule, MatDialogModule, MatGridListModule,
-			MatListModule, MatSnackBarModule],
+			MatListModule, MatSnackBarModule, MatCheckboxModule],
 })
 export class MaterialModule { }
